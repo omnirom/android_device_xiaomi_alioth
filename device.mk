@@ -1,5 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2019 The OmniRom Project
+# Copyright (C) 2021 The OmniRom Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,10 +19,10 @@
 # device-specific aspects (drivers) with a device-agnostic
 # product configuration (apps).
 #
-$(call inherit-product, vendor/asus/zenfone8/zenfone8-vendor.mk)
+$(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
 
 # fusefs / disable sdcardfs usage
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -89,7 +89,7 @@ PRODUCT_PACKAGES += vendor.qti.hardware.bluetooth_dun-V1.0-java
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl.recovery \
-    bootctrl.lahaina.recovery
+    bootctrl.kona.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
@@ -118,12 +118,12 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # FM
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
     qcom.fmradio
 
-PRODUCT_BOOT_JARS += qcom.fmradio
+#PRODUCT_BOOT_JARS += qcom.fmradio
 
 # Frameworks
 PRODUCT_PACKAGES += \
@@ -158,14 +158,14 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras
 
 # Prebuilt
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/asus/zenfone8/prebuilt/product,product) \
-    $(call find-copy-subdir-files,*,device/asus/zenfone8/prebuilt/root,recovery/root) \
-    $(call find-copy-subdir-files,*,device/asus/zenfone8/prebuilt/system,system) \
-    $(call find-copy-subdir-files,*,device/asus/zenfone8/prebuilt/system_ext,system_ext)
+#PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,device/xiaomi/alioth/prebuilt/product,product) \
+    $(call find-copy-subdir-files,*,device/xiaomi/alioth/prebuilt/root,recovery/root) \
+    $(call find-copy-subdir-files,*,device/xiaomi/alioth/prebuilt/system,system) \
+    $(call find-copy-subdir-files,*,device/xiaomi/alioth/prebuilt/system_ext,system_ext)
 
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
@@ -209,7 +209,7 @@ PRODUCT_PACKAGES += \
     otapreopt_script \
     update_engine \
     update_engine_sideload \
-    update_verifier
+    update_verifier 
 
 PRODUCT_HOST_PACKAGES += \
     brillo_update_payload
