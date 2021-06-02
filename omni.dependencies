@@ -7,18 +7,6 @@
   },
   {
     "remote": "omnirom",
-    "repository": "android_kernel_asus_sm8350",
-    "target_path": "kernel/asus/sm8350",
-    "revision": "android-11"
-  },
-  {
-     "remote": "omnirom",
-     "repository": "android_vendor_qcom_opensource_fm-commonsys",
-     "target_path": "vendor/qcom/opensource/fm-commonsys",
-     "revision": "android-11"
-   },
-   {
-    "remote": "omnirom",
     "repository": "android_vendor_qcom_opensource_packages_apps_Bluetooth",
     "target_path": "vendor/qcom/opensource/commonsys/packages/apps/Bluetooth",
     "revision": "android-11"
