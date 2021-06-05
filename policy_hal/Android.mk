@@ -1,4 +1,4 @@
-ifeq ($(TARGET_DEVICE),$(filter $(TARGET_DEVICE),zenfone8))
+ifeq ($(TARGET_DEVICE),$(filter $(TARGET_DEVICE),rog3 zenfone7))
 ifneq ($(USE_LEGACY_AUDIO_POLICY), 1)
 ifeq ($(USE_CUSTOM_AUDIO_POLICY), 1)
 LOCAL_PATH := $(call my-dir)
@@ -18,17 +18,14 @@ LOCAL_C_INCLUDES := $(TOPDIR)frameworks/av/services \
                     $(call include-path-for, avextension) \
 
 LOCAL_HEADER_LIBRARIES := \
-        libaudioclient_headers \
-        libaudiofoundation_headers \
         libbase_headers \
-        libmedia_headers \
         libstagefright_foundation_headers
 
 LOCAL_SHARED_LIBRARIES := \
     libcutils \
     libutils \
     liblog \
-    libaudiofoundation \
+    libsoundtrigger \
     libaudiopolicymanagerdefault
 
 LOCAL_STATIC_LIBRARIES := \
@@ -72,6 +69,7 @@ endif
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_AHAL_EXT)), true)
     LOCAL_CFLAGS += -DAHAL_EXT_ENABLED
     LOCAL_SHARED_LIBRARIES += libhidlbase
+    LOCAL_SHARED_LIBRARIES += libhidltransport
     LOCAL_SHARED_LIBRARIES += vendor.qti.hardware.audiohalext@1.0
     LOCAL_SHARED_LIBRARIES += vendor.qti.hardware.audiohalext-utils
 endif
