@@ -1,8 +1,8 @@
 {
-    "model": "Zenfone 8",
-    "pageUrl":"https://dl.omnirom.org/zenfone8",
-    "make": "Asus",
+    "model": "POCO F3",
+    "pageUrl":"https://dl.omnirom.org/alioth",
+    "make": "Xiaomi",
     "image": "meta/device_image.jpg",
-    "state": "official",
-    "device": "zenfone8"
+    "state": "unofficial",
+    "device": "alioth"
 }
