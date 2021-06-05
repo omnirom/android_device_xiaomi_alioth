@@ -17,4 +17,21 @@
          have distinct intensity levels -->
     <bool name="config_vibration_supports_multiple_intensities">true</bool>
 
+    <!-- Whether to show min refresh rate in display settings -->
+    <bool name="config_show_min_refresh_rate_switch">true</bool>
+
+    <!-- Defines the location of the fingerprint sensor on the device
+       0 = back
+       1 = front
+       2 = left side
+       3 = right side
+    -->
+    <integer name="config_fingerprintSensorLocation">3</integer>
+
+     <!-- Battery Health -->
+    <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
+    <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
+    <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
+    <bool name="config_supportBatteryHealth">true</bool>
+
 </resources>
