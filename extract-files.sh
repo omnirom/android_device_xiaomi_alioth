@@ -18,8 +18,8 @@
 
 set -e
 
-DEVICE=zenfone8
-VENDOR=asus
+DEVICE=alioth
+VENDOR=xiaomi
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
