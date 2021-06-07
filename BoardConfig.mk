@@ -174,9 +174,12 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
+		odm \
     system \
     system_ext \
-    product
+    product \
+		vendor
+
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9126801408
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_SUPER_PARTITION_SIZE := 9126805504
