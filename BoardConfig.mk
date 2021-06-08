@@ -19,6 +19,7 @@
 # product configuration (apps).
 #
 DEVICE_PATH := device/xiaomi/alioth
+IMAGES_PATH := vendor/images/xiaomi/alioth
 
 BOARD_VENDOR := xiaomi
 
@@ -32,11 +33,13 @@ AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     boot \
     dtbo \
+		odm \
     product \
     system \
     system_ext \
     vbmeta \
-    vbmeta_system
+    vbmeta_system \
+		vendor
 
 # Architecture
 TARGET_ARCH := arm64
@@ -159,8 +162,6 @@ BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 #BOARD_CACHEIMAGE_PARTITION_SIZE := 402653184
-# BOARD_KERNEL_BINARIES := kernel kernel-gki
-# BOARD_KERNEL-GKI_BOOTIMAGE_PARTITION_SIZE := $(BOARD_BOOTIMAGE_PARTITION_SIZE)
 #BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 30720000
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_DTBOIMG_PARTITION_SIZE := 33554432
@@ -172,13 +173,15 @@ TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
+BOARD_PREBUILT_ODMIMAGE := $(IMAGES_PATH)/odm.img
+BOARD_PREBUILT_VENDORIMAGE := $(IMAGES_PATH)/vendor.img
 
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
-		odm \
+    odm \
     system \
     system_ext \
     product \
-		vendor
+    vendor
 
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9126801408
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
