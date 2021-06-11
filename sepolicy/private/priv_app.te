@@ -3,11 +3,7 @@
 allow priv_app firmware_file:filesystem getattr;
 allow priv_app bt_firmware_file:filesystem getattr;
 allow priv_app {
-    asdf_file
-    bat_file
-    demoapp_file
     postinstall_mnt_dir
     radio_data_file
     system_app_data_file
-    xrom_file    
 }:dir getattr;
