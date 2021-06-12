@@ -121,7 +121,6 @@ system_ext/lib/vendor.qti.hardware.data.qmi@1.0.so
 system_ext/lib/vendor.qti.gnss@1.2.so
 system_ext/lib/vendor.qti.ims.callcapability@1.0.so
 system_ext/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-system_ext/lib/extractors
 system_ext/lib/extractors/libmmparserextractor.so
 system_ext/lib/lib-imsvideocodec.so
 system_ext/lib/vendor.qti.hardware.radio.ims@1.6.so
@@ -705,4 +704,3 @@ system_ext/framework/ActivityExt.jar
 system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.0-java.jar
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar
 -system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
-

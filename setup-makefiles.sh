@@ -47,7 +47,7 @@ write_headers "alioth"
 # The standard blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt
 
-write_makefiles "$MY_DIR"/proprietary-files-product.txt
+write_makefiles "$MY_DIR"/proprietary-files-custom.txt
 
 cat << EOF >> "$ANDROIDMK"
 
@@ -55,4 +55,3 @@ EOF
 
 # We are done!
 write_footers
-
