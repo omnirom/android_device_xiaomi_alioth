@@ -1,0 +1,16 @@
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+-product/app/PowerOffAlarm/PowerOffAlarm.apk
+
+-system/priv-app/QualcommVoiceActivation/QualcommVoiceActivation.apk;PRESIGNED
+
+-system/framework/WfdCommon.jar
+-system/framework/UxPerformance.jar
+-system/framework/QPerformance.jar
+
+etc/permissions/privapp-permissions-com.quicinc.voice.activation.xml
+etc/permissions/privapp-permissions-qti.xml
+
+# Bluetooth (aptX) - from crosshatch - RQ1A.201205.003
+system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
