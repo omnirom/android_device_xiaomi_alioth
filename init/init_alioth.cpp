@@ -40,8 +40,11 @@
 #include <sys/types.h>
 #include <sys/_system_properties.h>
 
-#include "vendor_init.h"
+//#include "vendor_init.h"
 #include "property_service.h"
+
+namespace android {
+namespace init {
 
 using android::base::GetProperty;
 int property_set(const char *key, const char *value) {
@@ -55,10 +58,10 @@ char const *heapminfree;
 char const *heapmaxfree;
 char const *heaptargetutilization;
 bool changed = false;
-char const *ro_build_fingerprint = "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys"; 
-char const *ro_build_description = "redfin-user 11 RQ2A.210505.003 7255357 release-keys"; 
+char const *ro_build_fingerprint = "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys";
+char const *ro_build_description = "redfin-user 11 RQ2A.210505.003 7255357 release-keys";
 char const *ro_stock_fingerprint = "POCO/alioth_global/alioth:11/RKQ1.200826.002/V12.0.2.0.RKHMIXM:user/release-keys";
-char const *ro_stock_description = "alioth-user 11 RKQ1.200826.002 V12.0.2.0.RKHMIXM release-keys"; 
+char const *ro_stock_description = "alioth-user 11 RKQ1.200826.002 V12.0.2.0.RKHMIXM release-keys";
 
 void check_device()
 {
@@ -171,12 +174,12 @@ void vendor_load_properties()
     property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
-    
+
     // Hide all sensitive props
     load_snet();
-    
+
     std::string region = android::base::GetProperty("ro.boot.hwc", "");
-    
+
     if (region.find("CN") != std::string::npos) {
         load_redmi_k40();
     }if (region.find("INDIA") != std::string::npos) {
@@ -186,3 +189,5 @@ void vendor_load_properties()
     }
 }
 
+}
+}
