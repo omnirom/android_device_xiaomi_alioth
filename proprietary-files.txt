@@ -256,7 +256,7 @@ system_ext/etc/bluetooth/interop_database.conf
 system_ext/etc/bluetooth/bt_configstore.conf
 system_ext/etc/bluetooth/bt_profile.conf
 
-system_ext/etc/vintf/manifest.xml
+# system_ext/etc/vintf/manifest.xml
 
 system_ext/etc/wfdconfigsink.xml
 
