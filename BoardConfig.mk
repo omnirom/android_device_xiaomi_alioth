@@ -33,14 +33,14 @@ AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     boot \
     dtbo \
-		odm \
+    odm \
     product \
     system \
     system_ext \
     vbmeta \
     vbmeta_system \
-		vendor \
-		vendor_boot
+    vendor \
+    vendor_boot
 
 # Architecture
 TARGET_ARCH := arm64
