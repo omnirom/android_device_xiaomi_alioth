@@ -101,8 +101,8 @@ PRODUCT_PACKAGES += \
     font_charger.png
 
 # DeviceParts
-PRODUCT_PACKAGES += \
-    DeviceParts
+#PRODUCT_PACKAGES += \
+#    DeviceParts
 
 # Display
 PRODUCT_PACKAGES += \
