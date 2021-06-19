@@ -226,6 +226,6 @@ PRODUCT_BOOT_JARS += \
 
 # Vintf
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/vintf/manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/vintf/manifest.xml
+    $(LOCAL_PATH)/vintf/manifest/manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/vintf/manifest/manifest.xml
 
 include vendor/qcom/opensource/display-commonsys-intf/config/display-product-system.mk
