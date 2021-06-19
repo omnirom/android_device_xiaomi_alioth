@@ -100,6 +100,10 @@ PRODUCT_PACKAGES += \
     animation.txt \
     font_charger.png
 
+# Camera
+PRODUCT_PACKAGES += \
+    SnapdragonCamera2
+
 # DeviceParts
 #PRODUCT_PACKAGES += \
 #    DeviceParts
