@@ -214,6 +214,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # WiFi
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.wifi@1.0 \
     TetheringOverlay \
     WifiOverlay
 
