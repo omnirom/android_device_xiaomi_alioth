@@ -75,9 +75,12 @@ PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/commonsys/system/bt/conf
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/qcom/opensource/commonsys-intf/bluetooth/overlay/qva
 
-PRODUCT_PACKAGES += BluetoothExt
-PRODUCT_PACKAGES += libbluetooth_qti
-PRODUCT_PACKAGES += vendor.qti.hardware.bluetooth_dun-V1.0-java
+PRODUCT_PACKAGES += \
+    BluetoothExt \
+		libbluetooth_qti \
+		vendor.qti.hardware.bluetooth_dun-V1.0-java \
+		vendor.qti.hardware.capabilityconfigstore@1.0 \
+		vendor.qti.hardware.capabilityconfigstore-V1.0-java
 
 # Boot control
 PRODUCT_PACKAGES += \
