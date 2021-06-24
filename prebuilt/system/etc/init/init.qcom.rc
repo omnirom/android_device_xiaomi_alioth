@@ -1,0 +1,21 @@
+# Bind mount all overlays on the vendor partition
+on init
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/AospFrameworkResOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/AospWifiResOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/DevicesAndroidOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/DevicesOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/ElderlyNavigationBarOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/FrameworksResTarget.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/GestureLineOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/MccMncOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/MiuiBiometricResOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/MiuiBluetoothOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/MiuiCameraOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/MiuiFrameworkResOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/MiuiSettingsResOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/MiuiSystemUIResOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/NetworkStackOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/ProvisionResOverlay.apk bind
+    mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/WifiResTarget.apk bind
+
+on post-fs-data
