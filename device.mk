@@ -180,7 +180,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Systemhelper
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.systemhelper@1.0
+    vendor.qti.hardware.systemhelper@1.0 \
+		android.hardware.thermal@2.0
 
 # Telephony
 PRODUCT_PACKAGES += \
