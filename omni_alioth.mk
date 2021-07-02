@@ -61,7 +61,7 @@ VENDOR_RELEASE := 11/RKQ1.200826.002/V12.5.1.0.RKHEUXM:user/release-keys
 BUILD_FINGERPRINT := Redmi/alioth_eea/alioth:$(VENDOR_RELEASE)
 OMNI_BUILD_FINGERPRINT := Redmi/alioth_eea/alioth:$(VENDOR_RELEASE)
 
-PRODUCT_ADB_KEYS := device/xiaomi/alioth/adbkey.pub
+# PRODUCT_ADB_KEYS := device/xiaomi/alioth/adbkey.pub
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
