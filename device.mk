@@ -210,7 +210,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # WiFi
 PRODUCT_PACKAGES += \
-    TetheringOverlay \
+    TetheringConfigOverlay \
     WifiOverlay
 
 # Wifi Display
