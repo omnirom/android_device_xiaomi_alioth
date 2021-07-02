@@ -60,8 +60,8 @@ char const *heaptargetutilization;
 bool changed = false;
 char const *ro_build_fingerprint = "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys";
 char const *ro_build_description = "redfin-user 11 RQ2A.210505.003 7255357 release-keys";
-char const *ro_stock_fingerprint = "POCO/alioth_global/alioth:11/RKQ1.200826.002/V12.0.2.0.RKHMIXM:user/release-keys";
-char const *ro_stock_description = "alioth-user 11 RKQ1.200826.002 V12.0.2.0.RKHMIXM release-keys";
+char const *ro_stock_fingerprint = "Redmi/alioth_eea/alioth:11/RKQ1.200826.002/V12.5.1.0.RKHEUXM:user/release-keys";
+char const *ro_stock_description = "alioth-user 11 RKQ1.200826.002 V12.5.1.0.RKHEUXM release-keys";
 
 void check_device()
 {
