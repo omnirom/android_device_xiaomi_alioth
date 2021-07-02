@@ -1,5 +1,5 @@
 # Bind mount all overlays on the vendor partition
-on init
+on early-init
     mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/AospFrameworkResOverlay.apk bind
     mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/AospWifiResOverlay.apk bind
     mount none /product/overlay/EmptyProductOverlay/EmptyProductOverlay.apk /vendor/overlay/DevicesAndroidOverlay.apk bind
