@@ -77,10 +77,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/qcom/opensource/commonsys-intf/bluetooth/over
 
 PRODUCT_PACKAGES += \
     BluetoothExt \
-		libbluetooth_qti \
-		vendor.qti.hardware.bluetooth_dun-V1.0-java \
-		vendor.qti.hardware.capabilityconfigstore@1.0 \
-		vendor.qti.hardware.capabilityconfigstore-V1.0-java
+    libbluetooth_qti \
+    vendor.qti.hardware.bluetooth_dun-V1.0-java \
+    vendor.qti.hardware.capabilityconfigstore@1.0 \
+    vendor.qti.hardware.capabilityconfigstore-V1.0-java
 
 # Boot control
 PRODUCT_PACKAGES += \
@@ -210,7 +210,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # WiFi
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.wifi@1.0 \
     TetheringOverlay \
     WifiOverlay
 
