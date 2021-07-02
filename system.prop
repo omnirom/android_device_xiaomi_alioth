@@ -190,3 +190,11 @@ ro.config.gnss.support=GPS,NavIC,BeiDou,GLONASS,Galileo
 #Netflix custom property
 ro.netflix.bsp_rev=Q8250-19134-1
 # end of device/qcom/qssi/system_sm8250.prop
+
+###
+# Added by omni
+persist.dbg.ims_volte_enable=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.radio.calls.on.ims=1
