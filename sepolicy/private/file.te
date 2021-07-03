@@ -1,11 +1,12 @@
+type adsprpcd_file, file_type;
 type bt_firmware_file, file_type;
 type firmware_file, fs_type, contextmount_type;
 type persist_file, file_type;
 
-# Files in userdata
-type vendor_qmipriod_data_file, file_type, data_file_type;
-
-# Offscreen Gestures
-#type sysfs_gesture, sysfs_type, fs_type;
-#type proc_touchscreen, proc_type, sysfs_type, fs_type;
-#type sysfs_touchscreen, sysfs_type, fs_type;
+# sysfs
+type sysfs_oem_wireless, fs_type, sysfs_type;
+type sysfs_battery_supply, sysfs_type, fs_type;
+type sysfs_wireless_supply, sysfs_type, fs_type;
+type sysfs_usb_supply, sysfs_type, fs_type;
+type sysfs_oem, sysfs_type, fs_type;
+type sysfs_kgsl, sysfs_type, fs_type;
