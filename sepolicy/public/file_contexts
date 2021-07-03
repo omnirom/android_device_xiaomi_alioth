@@ -1,0 +1,8 @@
+#Diag
+#/dev/diag                u:object_r:vendor_diag_device:s0
+
+#Kmsg
+#/dev/kmsg(/.*)?          u:object_r:kmsg_device:s0
+
+#ProcZoneInfo
+#/proc/zoneinfo           u:object_r:proc_zoneinfo:s0
