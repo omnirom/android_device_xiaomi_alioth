@@ -227,3 +227,6 @@ PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/product/private
 
 # Treble
 BOARD_VNDK_VERSION := current
+
+OMNI_PRODUCT_PROPERTIES += \
+    ro.sf.lcd_density=450
