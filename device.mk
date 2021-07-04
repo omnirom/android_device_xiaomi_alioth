@@ -155,6 +155,11 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/xiaomi/alioth/prebuilt/system,system) \
     $(call find-copy-subdir-files,*,device/xiaomi/alioth/prebuilt/system_ext,system_ext)
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.controls.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.controls.xml \
+		frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.freeform_window_management.xml
+
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
