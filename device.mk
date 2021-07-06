@@ -231,4 +231,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vintf/manifest/manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/vintf/manifest/manifest.xml
 #		$(LOCAL_PATH)/vintf/manifest/android.hardware.wifi.hostapd.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 
+# Vendor overlay
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vendor_overlay/etc/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio/audio_policy_configuration.xml \
+		$(LOCAL_PATH)/vendor_overlay/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio_policy_configuration.xml
+
 include vendor/qcom/opensource/display-commonsys-intf/config/display-product-system.mk
