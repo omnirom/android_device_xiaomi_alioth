@@ -29,6 +29,8 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),$(filter $(TARGET_DEVICE),alioth))
 
+include $(call all-makefiles-under,$(LOCAL_PATH))
+
 include $(CLEAR_VARS)
 HELPER_LIBS := libsystemhelper_jni.so
 HELPER_SYMLINKS := $(addprefix $(TARGET_OUT_SYSTEM_EXT_APPS)/com.qualcomm.qti.services.systemhelper/lib/arm64/,$(notdir $(HELPER_LIBS)))
