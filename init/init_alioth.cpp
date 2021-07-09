@@ -168,6 +168,7 @@ void load_mi11x() {
 
 void load_snet() {
    property_override("ro.boot.verifiedbootstate","green");
+   property_override("ro.boot.flash.locked", "1");
 }
 
 void vendor_load_properties()
