@@ -1,0 +1,1 @@
+/data/vendor/wifi(/.*)?                                u:object_r:wifi_vendor_data_file:s0
