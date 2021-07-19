@@ -6,3 +6,5 @@
 /dsp                    u:object_r:rootfs:s0
 
 /dev/block/platform/soc/1d84000\.ufshc/by-name/super   u:object_r:super_block_device:s0
+
+/data/vendor/wifi(/.*)?                                u:object_r:wifi_vendor_data_file:s0

@@ -6,3 +6,5 @@ type persist_file, file_type;
 type vendor_qmipriod_data_file, file_type, data_file_type;
 
 type vendor_sysfs_battery_supply, sysfs_type, fs_type;
+
+type wifi_vendor_data_file, file_type, data_file_type;

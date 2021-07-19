@@ -1,0 +1,3 @@
+type hal_wifi_hostapd_default, domain, netdomain, halserverdomain
+
+allow hal_wifi_hostapd_default wifi_vendor_data_file:dir write;
